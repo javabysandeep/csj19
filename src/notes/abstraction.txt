@@ -46,7 +46,9 @@ Parent class cannot access child class properties as well as methods.
 Child class can access all visible members of parent class.
 
 - Whenever once concrete class extends another abstract class then
-it is mandatory for the concrete class to give the override/implementation of abstract methods from abstract class.
+it is mandatory for the concrete class to give
+the override/implementation of abstract methods from abstract class.
 
 - Whenever once abstract class extends another abstract class then it is optional for the another child abstract class
   to give the override/implementation of abstract methods from abstract class.
+

@@ -1,8 +1,14 @@
 package oops.abstraction;
 
-public class UserServiceImpl extends UserService{
+public class UserServiceImpl extends EmailService{
+
     @Override
-    void notifyUser() {
-        System.out.println("implementation provided inside the child class");
+    public void C(String message) {
+        System.out.println("C");
+    }
+
+    @Override
+    void A() {
+        System.out.println("A");
     }
 }
