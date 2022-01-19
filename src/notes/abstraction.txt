@@ -52,3 +52,33 @@ the override/implementation of abstract methods from abstract class.
 - Whenever once abstract class extends another abstract class then it is optional for the another child abstract class
   to give the override/implementation of abstract methods from abstract class.
 
+---------------------------------------------------------------------------------------------
+Interface:
+
+What is it ?
+    It is a fully unimplemented class which contains abstract methods.
+How to create a interface?
+    interface InterfaceName{
+    //abstract methods.
+    }
+
+    one class extends another class
+    one class implements another interface
+    one interface extends another interface
+
+    Not valid:
+    one interface extends another class
+    one class extends another interface.
+    one interface implements another interface
+
+    When a concrete class implements an interface,
+    then it is the responsibility of the concrete class
+    to provide implementation of abstract methods from implemented interface.
+
+    When a abstract  class implements an interface,
+    then it is optional for the abstract class
+    to provide implementation of abstract methods from implemented interface.
+
+
+
+
