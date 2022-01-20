@@ -1,0 +1,84 @@
+Abstraction :
+	• Hiding the implementation details[method body] & exposing the functionality.
+	• By using abstract class and interface we achieve abstraction in Java.
+	• By using interface  we achieve 100% abstraction.
+	• Abstract means in-complete.
+
+Concrete Class:
+    Which contains concrete methods means complete methods which has body/implementation.
+
+We cannot write abstract methods inside the concrete class. if we write we get CTE
+
+In normal java class, we cannot declare methods, so we take help of abstract keyword
+To create abstract class.
+
+What is abstract class?
+A class created with a abstract keyword.
+
+What is a use of abstract class?
+To write the abstract methods as we are not able to write the abstract methods inside the concrete class.
+
+How to implement?
+
+abstract class Vehicle {
+        abstract void start();
+        abstract void end();
+}
+
+What is an abstract method?
+A method which created with a abstract keyword without method body.
+Abstract methods are called as in-complete methods.
+
+In abstract class, we can declare the methods using abstract keyword.
+In abstract class, we can have both abstract as well as non- abstract method.
+
+What all things an abstract class can contain?
+Everything which concrete class contains plus abstract methods.
+
+It is optional to write abstract methods inside the abstract class.
+
+We cannot create objects of a abstract class and interface as well.
+
+Why we are not able to create the object of abstract class? Since it is incomplete class so.
+
+Parent class cannot access child class properties as well as methods.
+
+Child class can access all visible members of parent class.
+
+- Whenever once concrete class extends another abstract class then
+it is mandatory for the concrete class to give
+the override/implementation of abstract methods from abstract class.
+
+- Whenever once abstract class extends another abstract class then it is optional for the another child abstract class
+  to give the override/implementation of abstract methods from abstract class.
+
+---------------------------------------------------------------------------------------------
+Interface:
+
+What is it ?
+    It is a fully unimplemented class which contains abstract methods.
+How to create a interface?
+    interface InterfaceName{
+    //abstract methods.
+    }
+
+    one class extends another class
+    one class implements another interface
+    one interface extends another interface
+
+    Not valid:
+    one interface extends another class
+    one class extends another interface.
+    one interface implements another interface
+
+    When a concrete class implements an interface,
+    then it is the responsibility of the concrete class
+    to provide implementation of abstract methods from implemented interface.
+
+    When a abstract  class implements an interface,
+    then it is optional for the abstract class
+    to provide implementation of abstract methods from implemented interface.
+
+
+
+
