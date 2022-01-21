@@ -16,4 +16,5 @@ public interface I2 {
     default void sendOtp(){
         System.out.println("I2 default method");
     }
+
 }
