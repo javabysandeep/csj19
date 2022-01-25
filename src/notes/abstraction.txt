@@ -88,9 +88,9 @@ Functional Interface: An interface which contains only one abstract method.
 - Single Abstract Method(SAM)
 - Functional interface may contain any number of static methods or default methods.
 - @FunctionalInterface it is optional.
+e.g. Runnable, Predicate
 
-
-We can give override to the abstract method of interface in three ways:
+We can give override to the abstract method of functional interface in three ways:
 1. Create  a subclass implements interface and give override.
 2. Create anonymous class and give override
 3. By using lambda expression we can give override to functional interface.
