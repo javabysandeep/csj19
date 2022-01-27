@@ -1,0 +1,28 @@
+What are we trying to achieve?
+- We want to store multiple values.
+    1. we can create that many variables manually.
+        - code length increases
+        - managing the variables is difficult
+        - time-consuming process
+        - performance issue.
+    2. use the concept of array.
+
+What is an array?
+- What is it?
+    - It is a group of elements which are of same type and stored sequentially.
+- How to create ?
+    - e.g. int[] array = new int[100]; // in this line we are creating 100 variables.
+- Why do we need an array?
+    - To store multiple elements of same type
+- Advantage
+    - Retrieval of data is faster
+Disadvantage:
+    - They are fixed in nature. We cannot modify the memory size at runtime.
+    - We cannot hold heterogeneous data
+
+- Array is an object created which holds the multiple values.
+- Array elements are initialized with default value.
+- We get the ArrayIndexOutOfBoundExecption, we try to access index which is out of index boundaries
+- We get NegativeArraySizeException, if we specify the array size in negative
+- For every array, a variable is created called as "length" which tells the size of any array
+
