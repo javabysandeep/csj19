@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 public class ArrayIntro {
     public static void main(String[] args) {
         int a;// declaration
@@ -21,7 +23,11 @@ public class ArrayIntro {
         // accessing all elements
         for (int index = 0; index < array3.length; index++) {
             System.out.println(array3[index]);
-
         }
+        int[] arrayd = {1,2,3,4,5};
+        Arrays.stream(arrayd).forEach(System.out::print);
+        System.out.println();
+        arrayd = new int[10];
+        Arrays.stream(arrayd).forEach(System.out::print);
     }
 }

@@ -1,0 +1,89 @@
+What is Java?
+Types of programming lang
+    - binary, assembly, high
+Why Java?
+Types of applications
+History of Java
+    - James Gosling
+    - requirements
+        - less power consumption, less no. of instructions, less memory consumption
+Platform, Platform dependency, independency
+Compiler, Interpreter
+JDK, JRE, JVM
+How JVM is platform dependent
+Java setup --> JDK, IDE
+Java features
+    - WORA
+    - platform independent
+    - object oriented
+    - secure
+    - robust
+    - dynamic
+    - distributed
+    - multithreaded
+    - high in performance
+Simple Java program
+    - program structure
+        - package, import, class, main method
+How to store data in memory?
+Variable
+Datatype - primitive -> byte, short, int, long, float, double, char, boolean
+Identifier
+Operators
+    - Arithmetic
+    - Relational/ Comparison
+    - Logical
+    - Bitwise
+    - Conditional or Ternary
+    - Pre, post increment, pre-post decrement
+    - Assignment operator
+Control Statements
+    - conditional ---> if-else, switch
+    - repeat ---> for, while, do-while, foreach
+    - Transfer statements --> return, break, continue
+Object oriented Programming
+- class
+- object
+- class components
+    - variables
+        - instance, static,local, reference variable, primitive variable
+    - methods
+        - instance, static
+    - constructor
+        - default, zero, param, param
+        - this keyword
+    - blocks
+        - instance, static
+    - nested class
+        - nested inner class
+        - static nested class
+        - local inner class
+        - anonymous class
+- Access specifier
+- final keyword
+OOPS
+   1. Encapsulation
+    - private data, getter, setters
+   2. Inheritance
+    - What, why, how, types, IS-A
+    - super keyword
+   3. Polymorphism
+    - method overloading
+    - method overriding
+   4. Abstraction
+    - abstract class
+    - interface
+        - marker, functional
+Java 8 Features
+- functional interface
+- default methods
+- static methods
+- lambda expression
+------------------------------------------------------------------------
+Array
+String
+Object class
+Exception Handling
+Multithreading
+Collection
+File handling
