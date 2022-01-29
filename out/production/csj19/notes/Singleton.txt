@@ -1,0 +1,14 @@
+What is a singleton class?
+  -A class which has maximum of one object.
+How to create singleton class?
+  - we make constructor private,
+  - data members private
+  - provide static method which will return the same object
+
+How to break the singleton?
+    - cloning
+    - serialization
+    - reflection
+    - multithreading
+Use cases:
+    - five use cases.

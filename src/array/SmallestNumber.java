@@ -1,0 +1,15 @@
+package array;
+
+public class SmallestNumber {
+    public static void main(String[] args) {
+        int[] array = {881, 2, 3, 490, 5, 6, 7, 8, 11, 99};
+        int min = array[0];
+        for (int index = 0; index < array.length; index++) {
+            if(array[index] < min){
+                min = array[index];
+            }
+        }
+        System.out.println("Min "+min);
+
+    }
+}
