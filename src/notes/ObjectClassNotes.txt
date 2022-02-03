@@ -1,0 +1,42 @@
+- Object class is the root class in the java.
+- Object class is directly or indirectly extended by every other class
+        in java which is predefined or used-defined.
+- Object class is given to provide some useful code for every java class.
+- There are 11 methods present in Object class:
+  1. public final native java.lang.Class<?> getClass();
+  2. public native int hashCode();
+  3. public boolean equals(java.lang.Object);
+  4. protected native java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  5. public java.lang.String toString();
+  6. public final native void notify();
+  7. public final native void notifyAll();
+  8. public final native void wait(long) throws java.lang.InterruptedException;
+  9. public final void wait(long, int) throws java.lang.InterruptedException;
+  10. public final void wait() throws java.lang.InterruptedException;
+  11. protected void finalize() throws java.lang.Throwable;
+---------------------------------------------------------------------------------------------------------
+
+1. getClass:
+    - this method returns the class name of the reference with package name.
+    - ref.getClass() ---> class name plus package name
+
+2. hashCode()
+    - hashcode method returns an integer value which is calculated based on object memory location.
+    - hashcode is not direct memory address.
+    - for given single execution, we get the same hashcode value.
+    - SOP(ref.hashCode());// integer value -- 12345
+    - if one or more reference point to the same object then there hashcode will be same
+
+3. toString():
+    - whenever we try to print the reference then toString is called implicitly.
+    - toString method returns an String which contains
+        - className  by calling getClass().getName
+        - @
+        - Hexadecimal value of HashCode: Integer.toHexString(hashCode());
+             public String toString() {
+                return getClass().getName() + "@" + Integer.toHexString(hashCode());
+            }
+4. equals():
+    - this method is used to check the reference equality.
+    - if the references are equal it returns boolean true otherwise false.
+    - whenever we say two references are equal by equals(), then there hashCode must be same.
