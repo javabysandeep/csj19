@@ -21,6 +21,7 @@
     - ref.getClass() ---> class name plus package name
 
 2. hashCode()
+    - hashing: converting larger string into smaller stirng by applying some algorithm or technique
     - hashcode method returns an integer value which is calculated based on object memory location.
     - hashcode is not direct memory address.
     - for given single execution, we get the same hashcode value.
@@ -40,3 +41,37 @@
     - this method is used to check the reference equality.
     - if the references are equal it returns boolean true otherwise false.
     - whenever we say two references are equal by equals(), then there hashCode must be same.
+
+5. finalize():
+    - it is method present inside the Object class which is having empty implementation.
+    - Garbage: Unreferenced objects.
+    - Garbage collector is a demon thread[a program] running in background which frees the unrefereed objects
+    - finalize() method will be called by garbage collector just before object gets destroyed.
+    - explicitly call the garbage collector :- System.gc();
+
+6. clone():
+    - cloning stands for creating copy of an object
+    - reference Copy: e.g. Season s1 = new Season();  Season s2 = s1;
+    - For cloning we have to implement the marker interface Cloneable, otherwise we get CloneNotSupportedException
+    - we override the clone method, we write the logic for cloning.
+    - clone method is present inside the Object class and not in Cloneable interface.
+        - Why it is so?
+    - By default we are provided with the shallow copy.
+    - Shallow Copy: we do the cloning of an object field by field and by copying the references of dependent objects.
+    -Deep copy:
+        -  we do the cloning of an object field by field and by copying the entire dependent objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

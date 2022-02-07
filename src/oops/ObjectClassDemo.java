@@ -1,7 +1,7 @@
 package oops;
 
 public class ObjectClassDemo extends Object {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         ObjectClassDemo demo = new ObjectClassDemo();
         ObjectClassDemo demo2 = new ObjectClassDemo();
         System.out.println(demo.getClass());
@@ -11,6 +11,8 @@ public class ObjectClassDemo extends Object {
         System.out.println(demo.hashCode());
         System.out.println(demo.equals(demo2));
         demo= demo2;
+        //explicitly call the garbage collector
+        System.gc();
         System.out.println(demo.equals(demo2));
         System.out.println(demo.hashCode()+" "+demo2.hashCode());
     }
