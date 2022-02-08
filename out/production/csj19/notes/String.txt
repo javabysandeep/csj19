@@ -1,8 +1,43 @@
 	1. Define String
+	Ans.
+	    - It is a predefined class in Java present in java.lang.package.
+	    - it represents group of characters.
+	    - internally it used array of characters to store group of characters.
+	    - String class provides different predefined methods.
+
 	2. In How many ways we can store string data?
+	Ans.
+	    - Using array of characters
+	    - Using String class
+
 	3. Why String class is given when char array is already available?
+	Ans.
+	    - representing strings in array of chars directly is time-consuming.
+	    - no method support in array of characters
+	    - array of chars is not memory efficient
+
 	4. What are the different ways to construct String object?
+	Ans.
+	    - by using new keyword : String str = new String("some string");
+	    - by using literal way: String str = "some string";
+
 	5. What is the difference in String object creation from the String literal and the constructor?
+	Ans.
+	   - Using literal way
+	    - String object is created inside the SCP[String Constant Pool memory area]
+	    - Object creation is optional in SCP.
+	    - If the string content object is already present inside SCP
+	        then new object will not be created,
+	        existing object reference will be returned.
+	    - SCP memory area is present inside the HEAP memory block[ from 1.7].
+	            [till 1.6 it was present inside Class area]
+
+	   - by using new keyword
+	     - String object is created inside the HEAP memory area without any check.
+	     - It will always point to the object present inside the HEAP
+	     - String object will be created inside SCP as well if the object is not present inside the SCP
+
+
 	6. String Pooling
 	7. What is immutable and why String objects are immutable?
 	8. What do you mean by immutable and mutable objects?

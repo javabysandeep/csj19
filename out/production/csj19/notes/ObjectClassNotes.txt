@@ -36,7 +36,7 @@
         - Hexadecimal value of HashCode: Integer.toHexString(hashCode());
              public String toString() {
                 return getClass().getName() + "@" + Integer.toHexString(hashCode());
-            }
+           }
 4. equals():
     - this method is used to check the reference equality.
     - if the references are equal it returns boolean true otherwise false.
@@ -58,6 +58,12 @@
         - Why it is so?
     - By default we are provided with the shallow copy.
     - Shallow Copy: we do the cloning of an object field by field and by copying the references of dependent objects.
+    -Deep copy:
+        -  we do the cloning of an object field by field and by copying the entire dependent objects.
+
+# Interview Questions:
+1. why wait, notify, notifyAll methods are present inside the Object class?
+    - Why they are not included in Thread class.
 
 
 
