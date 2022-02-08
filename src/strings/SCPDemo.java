@@ -1,5 +1,7 @@
 package strings;
 
+import java.util.Locale;
+
 public class SCPDemo {
     public static void main(String[] args) {
         //1. using new keyword
@@ -15,5 +17,36 @@ public class SCPDemo {
         String str3 = "some string";
         System.out.println(str2 == str3);//true
 
+        StringCopy stringCopy = new StringCopy(100);
+//        stringCopy.setValue(200);
+//        stringCopy.value = 400;
+
+//        StringBuilder  stringBuilder = "some string";//CTE
+        System.out.println(stringCopy.toString());//
+        System.out.println(str1.toString());//
+
+        System.out.println(str1.length());
+
+        String meeting = "CSJ 19 Core";
+        String newString = meeting.concat(" Java");
+        System.out.println(newString.toLowerCase());
+        System.out.println(newString.toUpperCase());
+
+
+    }
+}
+
+final class StringCopy {
+    private int value;
+
+    public int getValue() {
+        return value;
+    }
+
+    public StringCopy() {
+    }
+
+    public StringCopy(int value) {
+        this.value = value;
     }
 }

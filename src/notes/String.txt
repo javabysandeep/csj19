@@ -48,27 +48,66 @@
 
 	7. What is immutable and why String objects are immutable?
 	Ans.- Immutable means we can't the change content of an object.
-	    -
+	    - To avoid the object content to be modified as there can be multiple references pointing to the same object.
+
 	8. What do you mean by immutable and mutable objects?
 	Ans. - Immutable object : Once object is created, if we are not able to change the content.
 	     - Mutable objects: we change the content of an object.
 
 	9. Can we develop immutable object?
-	Ans.
+	Ans. Yes.
+	    1. make the class final
+	    2. make data members private
+	    3. do not provide setters.
+
 	10. Why StringBuffer class is given when we have String class to Store String data?
+	Ans. String objects are immutable. StringBuilder objects are mutable.
+
 	11. Why StringBuilder class is given when we have String, StringBuffer class to Store String data?
+	Ans. StringBuffer is thread safe and it is slow. StringBuilder is not a thread safe.
+
 	12. Is String thread safe?
+	Ans. No.
+
 	13. String vs StringBuffer vs StringBuilder
+	Ans.
+
 	14. Can we assign String literal directly to StringBuffer or StringBuilder type variables?
+	Ans.
+	    1. Creating the objects with the literal is only allowed for String class object creation.
+	    2. // StringBuilder  stringBuilder = "some string";//CTE
+
 	15. Printing String object
+	Ans. 1. toString() is overridden in String class which returns the actual string content.
+	     2. System.out.println(new String("string values"));//string values
+
 	16. How can we find length of the String?
+	Ans.  by using length() method defined inside the String class
+
 	17. what is the difference between length & length()?
+	Ans. - length is variable created for every array object which returns the size of an array.
+	     - length() is method present inside the String class.
+
 	18. The limitation of String class.
+	Ans. String objects are immutable.
+
 	19. Concatenation, how Strings can be concatenated?
+	Ans. - by using + operator
+	     - by using concat method from String class
+	        e.g. String newString = meeting.concat("Java");
+
 	20. Convert String case
+	Ans. by using toUpperCase(), toLowerCase()
+
 	21. How can we replace a character or substring in the given String?
+	Ans. replace(old, new);
+
 	22. How can we trim string leading and trailing spaces?
+	Ans. trim();
+
 	23. How String Objects must be compared for equality?
+	Ans.
+
 	24. What do meant by comparing string objects lexicographically, how it can be done?--> compareTo
 	25. How can we read characters from the String?
 	26. How can we find the position of a character or sub-string?
