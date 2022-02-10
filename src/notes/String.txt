@@ -152,4 +152,8 @@ We can create the objects of these with only one way i.e. new keyword
 11. How to Check if the String Contains only Letters
 12. How to Check If the String Contains Only Letters or Digits
 13. Java Program to Check if Input String is Palindrome
+14. Given a String find the first non-repeatable character in the String.
+    Example: str="zzzzzbbbccccddehhhhiii"; Answer is: e
+
+
 
