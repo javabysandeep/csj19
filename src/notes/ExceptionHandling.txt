@@ -1,0 +1,32 @@
+What is an Exception?
+- It is an unwanted, unexpected event that disturbs the normal flow execution of program.
+- it is an event that cause abnormal termination of the program.
+- it is a class present inside package java.lang
+- it is an object which is thrown by the JRE.
+- exceptions can be recovered.
+
+What do you mean by exception handling?
+- preventing the abnormal termination of the program with the help of try-catch-finally
+
+What is default exception handling in Java?
+- whenever an exception occurs, then implicitly, an exception object is created, and it is given to the default exception handler.
+- Default exception handler prints the exception details and terminate the program.
+
+What is an error?
+- It is an unwanted, unexpected event that terminates the program abnormally.
+- Errors cannot be recovered.
+- eg. StackOverFlowError, OutOfMemoryError
+
+What is exception hierarchy:
+- Throwable is the top class in the exception hierarchy.
+- Exception extends Throwable
+- RuntimeException extends Exception
+- Error extends Throwable
+
+Types of exception:
+- Checked exception:
+    - Exceptions which are checked at compile time and Checked exceptions extends Exception class.
+    - eg. CloneNotSupportedException -
+- UnChecked exception:
+    - Exceptions which are checked at tun time and UnChecked exceptions extends RuntimeException or Error class.
+    - eg. ArrayIndexOutOfBoundException, ArithmeticException, NullpointException -
