@@ -93,6 +93,32 @@ Invalid:
     then rest of the code from try won't be executed.
 
 
+If we are declaring multiple catch blocks, at that situation,
+the catch block order should be child to parent. shouldn’t be parent to the child.
+
+- The exception raised in catch block it is always abnormal termination.
+
+# throw
+- it is keyword which is used to throw an exception object explicitly.
+- with throw we can throw the exception object of both user-defined exceptions as well as predefined exception class objects
+
+1)	The main purpose of the throw keyword is to create an Exception object explicitly either for predefined or user defined.
+2)	Throw keyword works like a try block. The difference is try block is automatically find the situation and creates an Exception object implicitly. Whereas throw keyword creates an Exception object explicitly.
+3)	Mostly the main method is responsible to create an exception object. So the main method is creating exception object implicitly. A programmer is not responsible person to create an exception object.
+
+- we are using throw keyword inside the method.
+
+Throws keyword
+1)  main purpose of the throws keyword is bypassing the generated exception from present method to caller method.
+2)	Throw keyword is used in the method body. But throws keyword we have to use in the method declaration.
+3)	It is possible to throws any number of exceptions at a time based on the programmer requirement.
+4)	In the java language we are handling the Exception in two ways
+1)	By using try-catch blocks
+2)	By using throws keyword
+
+
+
+
 
 
 
