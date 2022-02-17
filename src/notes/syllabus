@@ -7,7 +7,7 @@ History of Java
     - James Gosling
     - requirements
         - less power consumption, less no. of instructions, less memory consumption
-Platform, Platform dependency, independency
+Platform, Platform dependency, independence
 Compiler, Interpreter
 JDK, JRE, JVM
 How JVM is platform dependent
@@ -37,6 +37,7 @@ Operators
     - Conditional or Ternary
     - Pre, post increment, pre-post decrement
     - Assignment operator
+    - Ellipsis
 Control Statements
     - conditional ---> if-else, switch
     - repeat ---> for, while, do-while, foreach

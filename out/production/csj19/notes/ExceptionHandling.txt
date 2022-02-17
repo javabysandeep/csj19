@@ -109,12 +109,48 @@ the catch block order should be child to parent. shouldn’t be parent to the ch
 - we are using throw keyword inside the method.
 
 Throws keyword
-1)  main purpose of the throws keyword is bypassing the generated exception from present method to caller method.
-2)	Throw keyword is used in the method body. But throws keyword we have to use in the method declaration.
+1)  main purpose of the throws keyword is
+    bypassing the generated exception from present method to caller method.
+2)	throws keyword we have to use in the method declaration.
 3)	It is possible to throws any number of exceptions at a time based on the programmer requirement.
 4)	In the java language we are handling the Exception in two ways
-1)	By using try-catch blocks
-2)	By using throws keyword
+    1)	By using try-catch blocks
+    2)	By using throws keyword
+
+Exception propagation:
+- In case of unchecked exceptions,
+exceptions objects are thrown and are not checked at compile time,
+ so they are implicitly propagated to the caller method.
+
+ - whenever an unchecked exception is thrown,
+ exception handler will be checked in the current method if not found then
+ it is checked in caller method.
+
+- In case of checked exception, we use throws keyword for exception propagation.
+- Exception object will be propagated to the caller method.
+
+
+# Custom Exception creation
+- create a java class with a name appending with Exception[this is not compulsory but it is recommedned for readability]
+- if we want to create checked exception: extend Exception class
+- if we want to create unchecked exception: extend RuntimeException class
+- provide constructors[zero param, and one param]
+
+class InvalidTimeClassException extends Exception{
+    InvalidTimeClassException(){
+        super();
+    }
+    InvalidTimeClassException(String message){
+            super(message);
+        }
+}
+
+
+
+
+
+
+
 
 
 
